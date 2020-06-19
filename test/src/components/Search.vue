@@ -13,7 +13,7 @@
               <div class="input-field">
                 <input
                   class="white grey-text"
-                  placeholder="Searcg gihpy animated gifs here...."
+                  placeholder="Search gihpy animated gifs here...."
                   v-model="tag"
                   type="text"
                 />
@@ -31,7 +31,7 @@
     <section id="gallery" class="section section-galley">
       <div class="container">
         <h4 class="teal-text">
-          <span class="teal-text">Suggested</span>Results
+          <span class="teal-text">Suggested </span>Results
         </h4>
 
         <div v-if="!loading" class="row">
@@ -94,7 +94,7 @@ export default {
         method: "get",
         url: "http://api.giphy.com/v1/gifs/search",
         params: {
-          api_key: "y52vmxi1zn9obRsVTzLPCDFTsaHlajlT",
+          api_key: "TvHGP2bAbcXxa8Rc2Sfs9mHzweDa4LsG",
           q: this.tag,
           limit: this.limit,
           offset: 0,
